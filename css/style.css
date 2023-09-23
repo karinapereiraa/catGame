@@ -1,0 +1,288 @@
+*	{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+	
+	.game-board{
+	width: 100%;
+	height: 500px;
+	border-bottom: 15px solid rgb(55, 55, 66);
+	margin: 0 auto;
+	position: relative;
+    overflow: hidden;
+    background: linear-gradient(#1e0648, #181821);
+	}
+
+    .score_name{
+        padding: 5px;
+        Left: 40px;
+        top: 10px;
+        color: rgb(255, 120, 201);
+        position: absolute;
+        font-weight: bold;
+        font-size: 2em;
+        font-family:'Courier New', Courier, monospace ; 
+    }
+
+    .scoreLife{
+        position: absolute;
+        padding: 5px;
+        Left: 140px;
+        top: 10px;
+        color: rgb(255, 120, 201);
+        position: absolute;
+        font-weight: bold;
+        font-size: 2em;
+        font-family:'Courier New', Courier, monospace ;
+    }
+	
+    .bird{
+		position: absolute;
+		bottom: 150px;
+		width: 150px; 
+        height: 100px;
+        animation: bird-animation 10s infinite linear;
+	}
+
+    .witch{
+		position: absolute;
+		bottom: 80px;
+		width: 200px; 
+        height: 150px;
+        animation: witch-animation 50s infinite linear;
+	}
+
+	.dog3{
+		position: absolute;
+		bottom: -15px;
+		width: 150px; 
+        height: 100px;
+        animation: dog-animation1 9s infinite linear;
+	}
+
+    .dog4{
+		position: absolute;
+		bottom: -50px;
+		width: 250px; 
+        height: 200px;
+        animation: dog-animation2 4s infinite linear;
+	}
+
+    .dog5{
+		position: absolute;
+		bottom: -30px;
+		width: 150px;  
+        height: 150px;
+        animation: dog-animation3 6s infinite linear;
+	}
+
+    .cat{
+        width: 150px;
+        position: absolute;
+        bottom: -20px;  
+        left: 50px;     
+    }
+
+    .jump{
+        animation: jump 500ms ease-out;
+    }
+
+    .clouds5{
+        width: 20%;
+        height: 300px;
+        position: absolute;
+        animation: clouds-animation 20s infinite linear;
+    }
+
+    .clouds6{
+        top: 50px;
+        width: 20%;
+        height: 300px;
+        position: absolute;
+        animation: clouds-animation2 30s infinite linear;
+    }
+
+    .clouds7{
+        top: 15px;
+        width: 5%;
+        height: 50px;
+        position: absolute;
+        animation: clouds-animation3 15s infinite linear;
+    }
+
+    .clouds8{
+        top: 50px;
+        width: 15%;
+        height: 150px;
+        position: absolute;
+        animation: clouds-animation3 10s infinite linear;
+    }
+
+    .clouds9{
+        top: 30px;
+        width: 10%;
+        height: 100px;
+        position: absolute;
+        animation: clouds-animation3 30s infinite linear;
+    }
+
+    .fundo{
+        width: 100%;
+        height: 600px;
+        position: absolute;
+    }
+
+    .fatec{
+		position: absolute;
+		bottom: -5px;
+		width: 250px; 
+        height: 90px;
+        animation: fatec-animation 7s infinite linear;
+	}
+
+    .mouse{
+		position: absolute;
+		bottom: -5px;
+		width: 50px; 
+        height: 30px;
+        animation: mouse-animation1 5s infinite linear;
+	}
+
+    .mouse2{
+		position: absolute;
+		bottom: -6px;
+		width: 50px; 
+        height: 30px;
+        animation: mouse-animation2 6s infinite linear;
+	}
+
+    @keyframes mouse-animation2 {
+        from{
+            right: -10330px;
+        }
+
+        to{
+            right: 100%;
+        }
+    }
+
+    @keyframes mouse-animation1 {
+        from{
+            right: -7000px;
+        }
+
+        to{
+            right: 100%;
+        }
+    }
+
+    @keyframes dog-animation1 {
+        from{
+            right: -3000px;
+        }
+
+        to{
+            right: 100%;
+        }
+    }
+
+    @keyframes dog-animation2 {
+        from{
+            right: -3000px;
+        }
+
+        to{
+            right: 100%;
+        }
+    }
+
+    @keyframes dog-animation3 {
+        from{
+            right: -8500px;
+        }
+
+        to{
+            right: 100%;
+        }
+    }
+
+
+    @keyframes jump {
+        0%{
+            bottom: 0;
+        }
+        40%{
+            bottom: 150px; 
+        }
+        50%{
+            bottom: 150px; 
+        }
+        60%{
+            bottom: 150px; 
+        }
+        100%{
+            bottom: 0;
+        }
+    }
+
+    @keyframes clouds-animation {
+        from{
+            right: -550px;
+        }
+
+        to{
+            right: 100%;
+        }
+    }
+
+    @keyframes clouds-animation2 {
+        from{
+            right: -3000px;
+        }
+
+        to{
+            right: 100%;
+        }
+    }
+
+    @keyframes clouds-animation3 {
+        from{
+            right: -1500px;
+        }
+
+        to{
+            right: 100%;
+        }
+    }
+
+    @keyframes witch-animation {
+        from{
+            right: -20000px;
+        }
+
+        to{
+            right: 100%;
+        }
+    }
+
+    @keyframes fatec-animation {
+        from{
+            right: -1000px;
+        }
+
+        to{
+            right: 100%;
+        }
+    }
+
+    @keyframes bird-animation {
+        from{
+            right: -15000px;
+        }
+
+        to{
+            right: 100%;
+        }
+    }
+
